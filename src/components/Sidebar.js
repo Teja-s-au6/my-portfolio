@@ -41,16 +41,20 @@ const Sidebar = () => {
 				</div>
 			</a>
 			<figure className="sidebar__social-icons my-2">
-				<a href="!#">
+				<a
+					href="https://www.facebook.com/profile.php?id=100010869246454"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<img src={facebook} alt="facebook" className="sidebar__icon mr-3" />
 				</a>
-				<a href="!#">
+				<a href="https://www.instagram.com/tejaspvg" target="_blank" rel="noopener noreferrer">
 					<img src={instagram} alt="instagram" className="sidebar__icon" />
 				</a>
 			</figure>
 			<div className="sidebar__contact">
 				<div className="sidebar__item sidebar__github">
-					<a href="!#">
+					<a href="https://github.com/Teja-s-au6" target="_blank" rel="noopener noreferrer">
 						<img src={github} alt="github" className="sidebar__icon mr-3" />github
 					</a>
 				</div>
