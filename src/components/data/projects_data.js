@@ -3,6 +3,8 @@ import homeseek from '../../assets/projects_images/homeseek.png';
 import breakingbadapi from '../../assets/projects_images/breakingbadapi.png';
 import mtube from '../../assets/projects_images/mtube.png';
 import shorturl from '../../assets/projects_images/shorturl.png';
+import moviedb from '../../assets/projects_images/movieDB.png';
+import tictactoe from '../../assets/projects_images/tictactoe.png';
 
 const data_projects = [
 	{
@@ -27,6 +29,22 @@ const data_projects = [
 		deployed_url: 'https://mtube.netlify.app',
 		github_url: 'https://github.com/Teja-s-au6/mtube',
 		category: [ 'react.js' ]
+	},
+
+	{
+		name: 'MovieDB',
+		image: moviedb,
+		deployed_url: 'https://moviedbclone.netlify.app',
+		github_url: 'https://github.com/Teja-s-au6/movieDB',
+		category: [ 'react.js' ]
+	},
+
+	{
+		name: 'Tic-Tac-Toe (Multiplayer)',
+		image: tictactoe,
+		deployed_url: 'https://lets-tic-tac-toe.herokuapp.com',
+		github_url: 'https://github.com/Teja-s-au6/tic-tac-toe',
+		category: [ 'node.js', 'mongoDB', 'react.js' ]
 	},
 
 	{
