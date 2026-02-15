@@ -31,7 +31,7 @@ const customStyles = {
 const BioPanel = () => {
   return (
     <aside
-      className="bg-[#FF4D00] rounded-[24px] p-8 h-full flex flex-col justify-between text-[#111111] overflow-hidden"
+      className="bg-[#FF4D00] rounded-[24px] p-8 h-auto md:h-full flex flex-col justify-between gap-6 text-[#111111] overflow-hidden"
       style={customStyles.bioPanel}
     >
       <div>
@@ -44,7 +44,7 @@ const BioPanel = () => {
         </div>
 
         <div className="mb-8">
-          <h1 className="font-['Playfair_Display'] text-5xl leading-none mb-4 tracking-[-1px]">
+          <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl leading-none mb-4 tracking-[-1px]">
             Teja S
           </h1>
           <span className="text-sm uppercase tracking-wider opacity-80 block">Senior Software Engineer</span>
@@ -123,7 +123,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-[#E8E6E1] rounded-full py-3 px-6 inline-flex gap-8 self-start border border-[rgba(255,255,255,0.1)] sticky top-0 z-50 shadow-md">
+    <nav className="bg-[#E8E6E1] rounded-full py-3 px-4 md:px-6 flex flex-wrap justify-center md:inline-flex w-auto gap-3 md:gap-8 self-start border border-[rgba(255,255,255,0.1)] sticky top-4 md:top-0 z-50 shadow-md mx-auto md:mx-0">
       {navItems.map((item) => (
         <button
           key={item.id}
@@ -156,7 +156,7 @@ const SkillCard = ({ title, description, delay }) => {
 const JobRow = ({ year, role, description, company, delay }) => {
   return (
     <div
-      className="grid grid-cols-[80px_1fr_auto] items-baseline py-4 border-b border-[rgba(0,0,0,0.1)] last:border-b-0"
+      className="flex flex-col md:grid md:grid-cols-[80px_1fr_auto] md:items-baseline py-4 border-b border-[rgba(0,0,0,0.1)] last:border-b-0 gap-2 md:gap-0"
       style={{
         opacity: 0,
         transform: 'translateX(-20px)',
@@ -168,7 +168,7 @@ const JobRow = ({ year, role, description, company, delay }) => {
         <h3 className="font-['Playfair_Display'] text-xl font-semibold">{role}</h3>
         <p className="text-[13px] opacity-70 mt-1">{description}</p>
       </div>
-      <div className="text-sm font-medium text-right">{company}</div>
+      <div className="text-sm font-medium text-left md:text-right">{company}</div>
     </div>
   );
 };
@@ -244,7 +244,7 @@ const SectionHeader = ({ children, style, id }) => {
 
 const ContactPanel = () => {
   return (
-    <div id="contact" className="bg-[#E8E6E1] rounded-[24px] p-16 text-center flex flex-col items-center justify-center min-h-[300px] mt-16 scroll-mt-24">
+    <div id="contact" className="bg-[#E8E6E1] rounded-[24px] p-8 md:p-16 text-center flex flex-col items-center justify-center min-h-[300px] mt-16 scroll-mt-24">
       <div className="w-16 h-16 bg-[#FF4D00] rounded-full mb-8"></div>
       <h2 className="font-['Playfair_Display'] text-[42px] mb-4">Let's build together.</h2>
       <p className="mb-6 opacity-70 max-w-md leading-relaxed">
@@ -306,15 +306,15 @@ const Portfolio = () => {
         `}
       </style>
       <div className="bg-[#111111] text-[#111111] font-['Inter'] antialiased overflow-x-hidden">
-        <div className="max-w-[1440px] mx-auto p-8 bg-[#111111] h-screen grid grid-cols-[320px_1fr] gap-8 max-[960px]:grid-cols-1 max-[960px]:p-4 overflow-hidden">
+        <div className="max-w-[1440px] mx-auto p-4 md:p-8 bg-[#111111] min-h-screen md:h-screen grid grid-cols-1 md:grid-cols-[320px_1fr] gap-4 md:gap-8 md:overflow-hidden">
           <BioPanel />
 
-          <main className="flex flex-col gap-6 h-full overflow-y-auto pr-2 pb-8 no-scrollbar scroll-smooth">
+          <main className="flex flex-col gap-6 md:h-full h-auto md:overflow-y-auto overflow-visible pr-0 md:pr-2 pb-8 no-scrollbar scroll-smooth">
             <NavBar />
 
             <SectionHeader id="skills">Skills & Expertise</SectionHeader>
 
-            <div className="bg-[#E8E6E1] rounded-[24px] p-8 grid grid-cols-3 gap-8 max-[960px]:grid-cols-1">
+            <div className="bg-[#E8E6E1] rounded-[24px] p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {skills.map((skill, idx) => (
                 <SkillCard key={idx} {...skill} />
               ))}
@@ -322,7 +322,7 @@ const Portfolio = () => {
 
             <SectionHeader id="experience" style={{ marginTop: '60px' }}>Career History</SectionHeader>
 
-            <div className="bg-[#E8E6E1] rounded-[24px] p-8">
+            <div className="bg-[#E8E6E1] rounded-[24px] p-6 md:p-8">
               {jobs.map((job, idx) => (
                 <JobRow key={idx} {...job} />
               ))}
@@ -330,7 +330,7 @@ const Portfolio = () => {
 
             <SectionHeader id="projects" style={{ marginTop: '60px' }}>Featured Projects</SectionHeader>
 
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-8 max-[960px]:grid-cols-1">
+            <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-6 md:gap-8">
               {projects.map((project, idx) => (
                 <ProjectCard key={idx} {...project} />
               ))}
