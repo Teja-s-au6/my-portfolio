@@ -1,16 +1,60 @@
-# React + Vite
+# Teja S - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimalist portfolio website designed to showcase my skills, experience, and projects as a Senior Software Engineer. Built with performance and aesthetics in mind.
 
-Currently, two official plugins are available:
+![Portfolio Preview](./public/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Modern & Minimalist Design**: Clean UI with a focus on readability and visual hierarchy.
+- **Interactive Elements**: Smooth scrolling, hover effects, and custom animations.
+- **Responsive Layout**: Optimized for all devices, from desktops to mobile phones.
+- **Dynamic Content**: Easy to update sections for Skills, Experience, and Projects.
+- **Contact Integration**: Direct mailto link for quick communication.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: [React](https://reactjs.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: SVG Icons & Custom Assets
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Getting Started
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Teja-s-au6/portfolio.git
+    cd portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🚢 Deployment
+
+To build the project for production:
+
+```bash
+npm run build
+```
+
+The output will be in the `dist` directory, ready to be deployed to Vercel, Netlify, or any static hosting provider.
+
+## 👤 Author
+
+**Teja S**
+- GitHub: [@Teja-s-au6](https://github.com/Teja-s-au6)
+- LinkedIn: [Teja S](https://www.linkedin.com/in/teja-s-945998245/)
+
+---
+*Built with ❤️ by Teja S*
+
